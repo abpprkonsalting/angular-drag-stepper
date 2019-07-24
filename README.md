@@ -8,7 +8,11 @@ General description
 A variant of material stepper component designed for been controlled by dragging the steps sideways. It's suited to work out of the box in both directions, horizontally and vertically. The later in xs layout, but that can be adjusted.
 
 
-Exports the class "DragStepperComponent" as a component ready for been used with the selector: <drag-stepper></drag-stepper>
+Exports the class "DragStepperComponent" as a component ready for been used with the selector: 
+
+```
+<drag-stepper></drag-stepper>
+```
 
 Inside the element goes the steps as <cdk-step></cdk-step>
 
