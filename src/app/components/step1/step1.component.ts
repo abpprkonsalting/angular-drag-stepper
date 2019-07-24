@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DragStepperMessagesHandle } from '../drag-stepper/drag-stepper.component';
 
 @Component({
@@ -6,14 +6,10 @@ import { DragStepperMessagesHandle } from '../drag-stepper/drag-stepper.componen
   templateUrl: './step1.component.html',
   styleUrls: ['./step1.component.less']
 })
-export class Step1Component implements OnInit {
-
-  professions: any[];
+export class Step1Component {
 
   constructor(protected stepperMessagesHandle: DragStepperMessagesHandle<Partial<any>>) {}
 
-  ngOnInit() {
-  }
 
   onCardClick(){
     this.stepperMessagesHandle.next({value:"next"});
