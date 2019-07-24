@@ -5,13 +5,16 @@ General description
 =======================
 
 
-A variant of material stepper component designed for been controlled by dragging the steps. It's suited to work out of the box in both directions (horizontally and vertically).
+A variant of material stepper component designed for been controlled by dragging the steps sideways. It's suited to work out of the box in both directions, horizontally and vertically. The later in xs layout, but that can be adjusted.
+
 
 Exports the class "DragStepperComponent" as component ready to use using the selector <drag-stepper></drag-stepper>
 
 Inside the component goes the steps as <cdk-step></cdk-step>
 
+
 ```
+
 <drag-stepper>
 
   <cdk-step> step 1 template </cdk-step>
@@ -21,7 +24,9 @@ Inside the component goes the steps as <cdk-step></cdk-step>
   <cdk-step> step 3 template </cdk-step>
 
 </drag-stepper>
+
 ```
+
 
 Export an injectable that can be imported by any other component in the application for sending controlling commands (next, prev, or an especific step number to go to).
 
