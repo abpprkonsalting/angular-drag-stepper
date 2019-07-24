@@ -1,0 +1,31 @@
+
+<div class="step-wrapper" fxLayout="column" fxLayoutAlign="start center">
+
+  <div>Step 1</div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-around space-around" class="step-buttons-wrapper">
+
+      <mat-card class="step-button" fxLayout="column" fxLayoutAlign="center center" (click)="onCardClick()">
+
+        <mat-card-title class="step-button-title" fxLayout="row" fxLayoutAlign="center center">
+          <span>Press me to go to next step</span>
+        </mat-card-title>
+
+        <mat-icon class="step-button-icon">arrow_forward</mat-icon>
+
+
+      </mat-card>
+      <mat-card class="step-button" fxLayout="column" fxLayoutAlign="center center" (click)="gotoFive()">
+
+          <mat-card-title class="step-button-title" fxLayout="row" fxLayoutAlign="center center">
+            <span>Press me to go to step:</span>
+          </mat-card-title>
+
+          <div class="step-button-icon">5</div>
+
+
+        </mat-card>
+
+    </div>
+
+</div>

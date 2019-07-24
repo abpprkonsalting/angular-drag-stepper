@@ -1,0 +1,29 @@
+
+<div class="card-drag-boundary" fxLayout="column wrap" ngStyle.xs="padding: 10px 0px;">
+
+<mat-card class='step-content' cdkDragBoundary=".card-drag-boundary" cdkDrag cdkDragLockAxis="v_layout ? y : x" (cdkDragMoved)="dragMoved($event)"
+  (cdkDragEnded)="dragEnded($event)" (cdkDragStarted)="dragStarted($event)" fxLayout="row" fxLayoutAlign="center center">
+
+
+  <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+
+
+</mat-card>
+</div>
+<div class="step-controls" fxLayout="row wrap" fxLayoutGap="0.5%" fxLayoutAlign="center center">
+
+  <button mat-button (click)="prev()" disabled="{{selectedIndex == 0}}">
+    <i class="material-icons" fxHide.xs fxShow.sm fxShow.md fxShow.lg fxShow.xl> keyboard_arrow_left </i>
+    <i class="material-icons" fxShow.xs fxHide.sm fxHide.md fxHide.lg fxHide.xl>keyboard_arrow_up</i>
+  </button>
+
+  <button mat-button (click)="next()" fxHide="{{selectedIndex == (_steps.length - 1)}}">
+    <i class="material-icons" fxHide.xs fxShow.sm fxShow.md fxShow.lg fxShow.xl>keyboard_arrow_right</i>
+    <i class="material-icons" fxShow.xs fxHide.sm fxHide.md fxHide.lg fxHide.xl>keyboard_arrow_down</i>
+  </button>
+
+  <button mat-button (click)="reset()" fxHide="{{selectedIndex < (_steps.length - 1)}}">
+    <i class="material-icons">refresh</i>
+  </button>
+
+</div>
