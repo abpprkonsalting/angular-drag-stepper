@@ -1,6 +1,4 @@
-# AngularDragStepper
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+# AngularDragStepper || <a href="https://abpprkonsalting.github.io/angular-drag-stepper/" rel="nofollow">Demo</a>
 
 ## Development server
 
