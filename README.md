@@ -8,7 +8,8 @@ A variant of material stepper component designed for been controlled by dragging
 Exports the class "DragStepperComponent" as component ready to use using the selector <drag-stepper></drag-stepper>
 
 Inside the component goes the steps as <cdk-step></cdk-step>
-'''
+
+```
 <drag-stepper>
 
   <cdk-step> step 1 template </cdk-step>
@@ -18,4 +19,4 @@ Inside the component goes the steps as <cdk-step></cdk-step>
   <cdk-step> step 3 template </cdk-step>
 
 </drag-stepper>
-'''
+```
